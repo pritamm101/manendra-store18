@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Discover handpicked everyday essentials at Manendra Store. Order easily through WhatsApp.">
+  <title>Manendra Store | Curated Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A LITTLE LUXURY, EVERY DAY · EASY WHATSAPP ORDERS</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Manendra Store home">
+      <span class="brand-mark">M</span>
+      <span class="brand-name">MANENDRA <small>STORE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+      <button class="cart-button" id="openCart" type="button">Bag <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY EDIT</p>
+        <h1>Good finds.<br><em>Golden details.</em></h1>
+        <p class="hero-text">A thoughtful mix of everyday favourites, picked to make your day feel a little more special.</p>
+        <a class="button button-gold" href="#shop">Explore the collection <span>↗</span></a>
+        <p class="microcopy">Simple shopping · Personal service · WhatsApp ordering</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Decorative luxury gold and black shapes">
+        <div class="art-ring"></div><div class="art-disc"></div>
+        <div class="art-caption"><span>MS</span><span>CURATED FOR YOU</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Store highlights">
+      <div>✦ HANDPICKED FINDS</div><div>✦ EASY WHATSAPP ORDERS</div><div>✦ PERSONAL SERVICE</div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your <em>favourite.</em></h2></div>
+        <p>Explore a mix of useful, lovely things.<br>New finds can be added any time.</p>
+      </div>
+      <div class="filters" id="filters" aria-label="Filter products">
+        <button class="filter active" data-category="All">All items</button>
+        <button class="filter" data-category="Accessories">Accessories</button>
+        <button class="filter" data-category="Lifestyle">Lifestyle</button>
+        <button class="filter" data-category="Tech">Tech</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="demo-note">Demo catalogue: replace sample items, prices and pictures with your real products before launching.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-monogram">M<span>S</span></div>
+      <div><p class="eyebrow">A NOTE FROM US</p><h2>Small details.<br><em>Better everyday.</em></h2>
+      <p>Manendra Store brings together a little mix of everyday essentials. Browse the collection, add your picks to the bag, and send your order directly through WhatsApp.</p>
+      <a class="text-link" href="#contact">Say hello <span>→</span></a></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">NEED A HAND?</p><h2>Let’s make it <em>easy.</em></h2>
+      <p>Have a question about an item? Message us and we’ll help.</p>
+      <button class="button button-dark" id="contactWhatsApp" type="button">Chat on WhatsApp ↗</button>
+      <p class="contact-hint">Before launch, add your correct WhatsApp number in <code>script.js</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">M</span><span class="brand-name">MANENDRA <small>STORE</small></span></a>
+    <p>© <span id="year"></span> Manendra Store. All rights reserved.</p>
+    <p class="footer-small">Product availability and delivery details are confirmed over WhatsApp.</p>
+  </footer>
+
+  <div class="overlay" id="cartOverlay" hidden>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Shopping bag</h2></div><button id="closeCart" class="icon-button" aria-label="Close bag">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-bottom"><div class="total-row"><span>Estimated total</span><strong id="cartTotal">₹0</strong></div>
+      <p class="cart-small">Shipping and final availability will be confirmed by the store.</p>
+      <button id="checkoutWhatsApp" class="button button-gold full-width" type="button">Order on WhatsApp ↗</button></div>
+    </aside>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
